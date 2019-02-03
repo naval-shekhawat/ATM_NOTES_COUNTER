@@ -1,0 +1,8 @@
+.atm-screen{
+    display: flex;
+    align-content: space-between;
+}
+
+.atm-screen .panels{
+    flex:1;
+}

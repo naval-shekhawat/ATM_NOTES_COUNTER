@@ -1,0 +1,24 @@
+.left-panel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color : white;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.left-panel-container .form-group .amount-label {
+    display:block;
+}
+
+.left-panel-container .form-group .amount-entered {
+   max-width: 200px;
+}
+
+.atm-get-button {
+    width:300px;
+    height:45px;
+}
+

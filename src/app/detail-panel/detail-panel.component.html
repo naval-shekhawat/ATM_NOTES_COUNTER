@@ -1,0 +1,12 @@
+<div class="detail-panel-container" 
+     [style.visibility]="numberOfNotesDispenced > 0 ? 'visible' : 'hidden'">
+    <h4 class="header-message">You will get the following amount</h4>
+
+    <div class="notes-container">
+        <div class="note-count" *ngFor="let note of availableCurrency">
+                {{note.count}} notes of Rs. {{note.denomination}}
+        </div>
+    </div>
+    
+    <h5 class="notes-dispensed"> Total notes dispenced: {{numberOfNotesDispenced}} </h5>
+</div>

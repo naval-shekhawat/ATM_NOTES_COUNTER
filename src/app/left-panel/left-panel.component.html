@@ -1,0 +1,21 @@
+<div class="left-panel-container">
+    <h1>Welcome to ATM</h1>
+    <form #atmForm="ngForm">
+      <div class="form-group">
+        <label class="amount-label" for="amount">Enter the amount</label>
+        <input class="form-control amount-entered" name="amount" ngModel type="text" 
+          #amount="ngModel" min="0" required>
+         <div *ngIf="amount.invalid && amount.dirty"
+            class="alert alert-danger">
+          <div *ngIf="amount.errors.required">
+            Amount is required.
+          </div>
+          <div *ngIf="amount.errors.number">
+              Not valid number
+          </div>
+        </div>
+      </div>
+      <button type="submit" (click)="getMoney(amount.value)" [disabled]="atmForm.invalid"
+       class="btn btn-primary atm-get-button">Get Money</button>
+    </form>
+</div>

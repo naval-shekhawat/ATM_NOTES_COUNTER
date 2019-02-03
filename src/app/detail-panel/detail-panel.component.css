@@ -1,0 +1,16 @@
+.detail-panel-container {
+    margin: 10px;
+}
+
+.detail-panel-container .notes-container {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+.detail-panel-container .notes-container .note-count{
+    flex: 1 0 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: 1px solid dimgray;
+}
+
